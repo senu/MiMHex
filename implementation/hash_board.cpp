@@ -90,6 +90,10 @@ std::string HashBoard::ToAsciiArt() {
 
 inline void HashBoard::Change(HashColor color, uint position, bool) {
 // position is in 0..(kBoardSize ^ 2)
+    if (!(position >= 0 && position < kBoardSize * kBoardSize)){
+        std::cerr << "HashBorad::Change(HashColor, uint, bool): czytanie poza tablica" << std::endl;
+        assert(false);
+    }
 	return Change(color, transf[position]);
 }
 
