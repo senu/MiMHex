@@ -9,3 +9,4 @@ patternFetch/logs/*
 main/gather_patterns
 main/hex
 main/hex_benchmark
+tags

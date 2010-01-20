@@ -5,13 +5,13 @@ DEST_DIR = .
 
 all: benchmark main gather_patterns
 
-benchmark:
+benchmark: main_benchmark.cpp
 	$(CXX) $(OPTIONS) $(INCLUDE_DIR) -o $(DEST_DIR)/hex_benchmark main_benchmark.cpp
 
-main:
+main: main.cpp
 	$(CXX) $(OPTIONS) $(INCLUDE_DIR) -o $(DEST_DIR)/hex main.cpp
 
-gather_patterns:
+gather_patterns: gather_patterns.cpp
 	$(CXX) $(OPTIONS) $(INCLUDE_DIR) -o $(DEST_DIR)/gather_patterns gather_patterns.cpp
 
 clean:
