@@ -8,11 +8,13 @@
  *
  */
 
-#include <iostream>
 #include "gtp.hpp"
 #include "gtp.cpp"
 #include "hash_board.h"
 #include "hash_board.cpp"
+
+#include <iostream>
+#include <inttypes.h>
 
 // prints 7-elem hash
 void printHash(uint hash, std::ostream &o)
