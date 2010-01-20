@@ -1,0 +1,7 @@
+patternFetch/list.txt
+patternFetch/logs
+patternFetch/game.tmp
+patternFetch/games
+main/gather_patterns
+main/hex
+main/hex_benchmark
