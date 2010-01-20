@@ -1,5 +1,5 @@
 CXX = g++
-OPTIONS = -Wall -W -O0 -ggdb
+OPTIONS = -Wall -W -Wextra -Wshadow -O0 -ggdb 
 INCLUDE_DIR = -I ../lib -I ../implementation
 DEST_DIR = .
 
@@ -15,4 +15,4 @@ gather_patterns:
 	$(CXX) $(OPTIONS) $(INCLUDE_DIR) -o $(DEST_DIR)/gather_patterns gather_patterns.cpp
 
 clean:
-	rm -f hex hex_benchmark
+	rm -f ${DEST_DIR}/hex ${DEST_DIR}/hex_benchmark ${DEST_DIR}/gather_patterns
